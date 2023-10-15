@@ -1,0 +1,18 @@
+# system files
+.DS_Store
+Thumbs.db
+*.pem
+
+# node modules
+node_modules/
+
+# log files
+*.log
+
+# environment files
+*.env*
+!.env*.example
+
+# build files
+/dist
+/build
