@@ -6,7 +6,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "script": "ts-node --cwd=src"
+    "script": "ts-node --cwd=src",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
