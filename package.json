@@ -6,7 +6,10 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "script": "ts-node --cwd=src",
+    "node": "substrate-contracts-node --dev --base-path ./.node-data",
+    "script": "f() { node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/$1; }; f \"$@\"",
+    "script:cwd": "node --no-warnings=ExperimentalWarning --loader ts-node/esm",
+    "script:node18": "ts-node --cwd=src",
     "type-check": "tsc --pretty --noEmit"
   },
   "devDependencies": {
