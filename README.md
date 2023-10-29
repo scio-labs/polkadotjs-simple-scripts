@@ -5,12 +5,33 @@
 
 This repository contains examples of how to use the polkadot{.js} API to connect to a node and perform some basic operations.
 
+**Join the discussion in our [Telegram Group](https://t.me/inkathon)** 💬
+
 ## Getting started
 
 > **Pre-requisites:**
 >
-> - Setup Node.js v16+ (recommended via [nvm](https://github.com/nvm-sh/nvm))
+> - Setup Node.js v18+ (recommended via [nvm](https://github.com/nvm-sh/nvm) with `nvm install 18`)
 > - Clone this repository
+
+<details>
+<summary><strong>Special Instructions for Windows Users</strong></summary>
+
+> [!IMPORTANT]  
+> PowerShell is not supported. Windows users must either use [WSL](https://learn.microsoft.com/windows/wsl/install) (recommended) or a custom shell like [Git Bash](https://git-scm.com/downloads).
+
+> **Pre-requisites when using WSL for Linux:**
+>
+> - Install [WSL](https://learn.microsoft.com/windows/wsl/install) and execute _all_ commands in the WSL terminal
+> - Setup Node.js v18+ (recommended via [nvm](https://github.com/nvm-sh/nvm) with `nvm install 18`)
+> - Install the following npm packages globally:
+> - `npm i -g npm`
+> - `npm i -g pnpm node-gyp make`
+> - Clone this repository into the WSL file system (e.g. `/home/<user>/`).
+>
+> **Tip:** You can enter `\\wsl$\` in the top bar of the Windows Explorer to access the WSL file system visually.
+
+</details>
 
 **Install dependencies:**
 
@@ -34,6 +55,16 @@ npm run script traverse-events
 ## or
 yarn run script traverse-events
 ```
+
+## Example Scripts
+
+> [!NOTE]  
+> You can use this repository as a starting point for your own scripts, ignore the examples, and uninstall redundant dependencies.
+
+| Macros            | Description                                        | Dependencies                                                            |
+| ----------------- | -------------------------------------------------- | ----------------------------------------------------------------------- |
+| `traverse-events` | Traverses all events at a specific block.          | `@polkadot/api`                                                         |
+| `balance`         | Fetches the balance for a given network & address. | `@polkadot/api`<br/>`@scio-labs/use-inkathon`<br/>`@azns/resolver-core` |
 
 ## About
 
