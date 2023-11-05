@@ -11,7 +11,7 @@ const main = async () => {
   const version = (await api.rpc.system.version())?.toString() || "";
   console.log(`Initialized API on ${network} (${version})`);
 
-  // Log events in block
+  // Log events at block
   // https://polkadot.js.org/docs/api/cookbook/blocks
   const blockHash = await api.rpc.chain.getBlockHash(1);
   const apiAt = await api.at(blockHash);

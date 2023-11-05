@@ -49,11 +49,11 @@ yarn install
 > These commands will run a TypeScript script directly using `ts-node`. Alternatively, you can build the TypeScript files and run the JavaScript output using `node`.
 
 ```bash
-pnpm run script traverse-events
+pnpm run script traverse-events-at-block
 ## or
-npm run script traverse-events
+npm run script traverse-events-at-block
 ## or
-yarn run script traverse-events
+yarn run script traverse-events-at-block
 ```
 
 ## Example Scripts
@@ -61,10 +61,11 @@ yarn run script traverse-events
 > [!NOTE]  
 > You can use this repository as a starting point for your own scripts, ignore the examples, and uninstall redundant dependencies.
 
-| Macros            | Description                                        | Dependencies                                                            |
-| ----------------- | -------------------------------------------------- | ----------------------------------------------------------------------- |
-| `traverse-events` | Traverses all events at a specific block.          | `@polkadot/api`                                                         |
-| `balance`         | Fetches the balance for a given network & address. | `@polkadot/api`<br/>`@scio-labs/use-inkathon`<br/>`@azns/resolver-core` |
+| Macros                     | Description                                        | Dependencies                                                            |
+| -------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------- |
+| `balance`                  | Fetches the balance for a given network & address. | `@polkadot/api`<br/>`@scio-labs/use-inkathon`<br/>`@azns/resolver-core` |
+| `listen-contract-events`   | Listens & decodes ink! contract events.            | `@polkadot/api`<br/>`@polkadot/api-contract`                            |
+| `traverse-events-at-block` | Traverses all events at a specific block.          | `@polkadot/api`                                                         |
 
 ## About
 
