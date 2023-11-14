@@ -46,7 +46,7 @@ yarn install
 **Run a script:**
 
 > [!NOTE]  
-> These commands will run a TypeScript script directly using `ts-node`. Alternatively, you can build the TypeScript files and run the JavaScript output using `node`.
+> These commands will run a TypeScript script directly using [`tsx`](https://github.com/privatenumber/tsx). Alternatively, you can build the TypeScript files and run the JavaScript output using `node`.
 
 ```bash
 pnpm run script traverse-events-at-block

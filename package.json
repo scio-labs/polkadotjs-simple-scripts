@@ -7,15 +7,13 @@
   "scripts": {
     "build": "tsc",
     "node": "substrate-contracts-node --dev --base-path ./.node-data",
-    "script": "f() { node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/$1; }; f \"$@\"",
-    "script:cwd": "node --no-warnings=ExperimentalWarning --loader ts-node/esm",
-    "script:node18": "ts-node --cwd=src",
+    "script": "f() { tsx ./src/$1; }; f \"$@\"",
     "type-check": "tsc --pretty --noEmit"
   },
   "devDependencies": {
     "@polkadot/types": "^10.10.1",
-    "@types/node": "^18.18.8",
-    "ts-node": "^10.9.1",
+    "@types/node": "^18.18.9",
+    "tsx": "^4.1.2",
     "typescript": "^5.2.2"
   },
   "dependencies": {
@@ -24,7 +22,7 @@
     "@polkadot/api-contract": "^10.10.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
-    "@scio-labs/use-inkathon": "^0.4.3",
+    "@scio-labs/use-inkathon": "file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz",
     "enquirer": "^2.4.1"
   }
 }
