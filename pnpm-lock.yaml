@@ -21,8 +21,8 @@ dependencies:
     specifier: ^12.5.1
     version: 12.5.1(@polkadot/util@12.5.1)
   '@scio-labs/use-inkathon':
-    specifier: file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz
-    version: file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz(@nightlylabs/wallet-selector-polkadot@0.1.12)(@polkadot/api-contract@10.10.1)(@polkadot/api@10.10.1)(@polkadot/extension-inject@0.46.5)(@polkadot/types@10.10.1)(@polkadot/util@12.5.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.5.0
+    version: 0.5.0(@nightlylabs/wallet-selector-polkadot@0.1.12)(@polkadot/api-contract@10.10.1)(@polkadot/api@10.10.1)(@polkadot/extension-inject@0.46.5)(@polkadot/types@10.10.1)(@polkadot/util@12.5.1)(react-dom@18.2.0)(react@18.2.0)
   enquirer:
     specifier: ^2.4.1
     version: 2.4.1
@@ -939,6 +939,29 @@ packages:
       - utf-8-validate
     dev: false
 
+  /@scio-labs/use-inkathon@0.5.0(@nightlylabs/wallet-selector-polkadot@0.1.12)(@polkadot/api-contract@10.10.1)(@polkadot/api@10.10.1)(@polkadot/extension-inject@0.46.5)(@polkadot/types@10.10.1)(@polkadot/util@12.5.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-2jyPoxIxksX4giyCpptKBUCbv3kpUd36EPobC19bgMKm5tJgsWJkcJA+F3TYLEwJgeR76BajQd9nL4C1zRApXA==}
+    engines: {node: '>=16 <=18', pnpm: '8'}
+    peerDependencies:
+      '@nightlylabs/wallet-selector-polkadot': '>=0.1.10'
+      '@polkadot/api': '>=10'
+      '@polkadot/api-contract': '>=10'
+      '@polkadot/extension-inject': '>=0.46'
+      '@polkadot/types': '>=10'
+      '@polkadot/util': '>=10'
+      react: '>=18'
+      react-dom: '>=18'
+    dependencies:
+      '@nightlylabs/wallet-selector-polkadot': 0.1.12(@polkadot/util@12.5.1)
+      '@polkadot/api': 10.10.1
+      '@polkadot/api-contract': 10.10.1
+      '@polkadot/extension-inject': 0.46.5(@polkadot/api@10.10.1)(@polkadot/util@12.5.1)
+      '@polkadot/types': 10.10.1
+      '@polkadot/util': 12.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@scure/base@1.1.3:
     resolution: {integrity: sha512-/+SgoRjLq7Xlf0CWuLHq2LUZeL/w65kfzAPG5NH9pcmBhs+nunQTn4gvdwgMTIXnt9b2C/1SeL2XiysZEyIC9Q==}
 
@@ -1094,7 +1117,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001562
-      electron-to-chromium: 1.4.582
+      electron-to-chromium: 1.4.586
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: false
@@ -1202,8 +1225,8 @@ packages:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
     dev: false
 
-  /electron-to-chromium@1.4.582:
-    resolution: {integrity: sha512-89o0MGoocwYbzqUUjc+VNpeOFSOK9nIdC5wY4N+PVUarUK0MtjyTjks75AZS2bW4Kl8MdewdFsWaH0jLy+JNoA==}
+  /electron-to-chromium@1.4.586:
+    resolution: {integrity: sha512-qMa+E6yf1fNQbg3G66pHLXeJUP5CCCzNat1VPczOZOqgI2w4u+8y9sQnswMdGs5m4C1rOePq37EVBr/nsPQY7w==}
     dev: false
 
   /enquirer@2.4.1:
@@ -2031,30 +2054,4 @@ packages:
   /yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
-    dev: false
-
-  file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz(@nightlylabs/wallet-selector-polkadot@0.1.12)(@polkadot/api-contract@10.10.1)(@polkadot/api@10.10.1)(@polkadot/extension-inject@0.46.5)(@polkadot/types@10.10.1)(@polkadot/util@12.5.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-M0TNWj3gTtSEzrFkx/qEeZyqg6wVXTlzkmGaE6m7tIht8loDx4d/NaUDk7XDZWPnoOjav5nYPMdPrdbU/jCiCQ==, tarball: file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz}
-    id: file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz
-    name: '@scio-labs/use-inkathon'
-    version: 0.4.3
-    engines: {node: '>=16 <=18', pnpm: '8'}
-    peerDependencies:
-      '@nightlylabs/wallet-selector-polkadot': '>=0.1.10'
-      '@polkadot/api': '>=10'
-      '@polkadot/api-contract': '>=10'
-      '@polkadot/extension-inject': '>=0.46'
-      '@polkadot/types': '>=10'
-      '@polkadot/util': '>=10'
-      react: '>=18'
-      react-dom: '>=18'
-    dependencies:
-      '@nightlylabs/wallet-selector-polkadot': 0.1.12(@polkadot/util@12.5.1)
-      '@polkadot/api': 10.10.1
-      '@polkadot/api-contract': 10.10.1
-      '@polkadot/extension-inject': 0.46.5(@polkadot/api@10.10.1)(@polkadot/util@12.5.1)
-      '@polkadot/types': 10.10.1
-      '@polkadot/util': 12.5.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: false

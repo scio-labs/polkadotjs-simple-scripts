@@ -22,7 +22,7 @@
     "@polkadot/api-contract": "^10.10.1",
     "@polkadot/util": "^12.5.1",
     "@polkadot/util-crypto": "^12.5.1",
-    "@scio-labs/use-inkathon": "file:../use-inkathon/scio-labs-use-inkathon-0.4.3.tgz",
+    "@scio-labs/use-inkathon": "^0.5.0",
     "enquirer": "^2.4.1"
   }
 }

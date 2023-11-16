@@ -65,12 +65,10 @@ const main = async () => {
   console.log(`Native Balance: ${balanceFormatted}`);
 
   // Fetch PSP22 token balances
-  if (chain.network === alephzero.network) {
-    console.log(`PSP22 Balances:`);
-    const psp22BalanceData = await getPSP22Balances(api, address);
-    for (const { balanceFormatted } of psp22BalanceData) {
-      console.log(`  ‣ ${balanceFormatted}`);
-    }
+  const psp22BalanceData = await getPSP22Balances(api, address, chainId);
+  if (psp22BalanceData?.length) console.log(`PSP22 Balances:`);
+  for (const { balanceFormatted } of psp22BalanceData) {
+    console.log(`  ‣ ${balanceFormatted}`);
   }
 };
 
