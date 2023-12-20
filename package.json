@@ -14,18 +14,18 @@
     "type-check": "tsc --pretty --noEmit"
   },
   "devDependencies": {
-    "@polkadot/types": "^10.11.1",
-    "@types/node": "^20.10.0",
-    "tsx": "^4.5.0",
-    "typescript": "^5.3.2"
+    "@polkadot/types": "^10.11.2",
+    "@types/node": "^20.10.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@azns/resolver-core": "^1.6.0",
-    "@polkadot/api": "^10.11.1",
-    "@polkadot/api-contract": "^10.11.1",
-    "@polkadot/util": "^12.6.1",
-    "@polkadot/util-crypto": "^12.6.1",
-    "@scio-labs/use-inkathon": "^0.6.0",
+    "@polkadot/api": "^10.11.2",
+    "@polkadot/api-contract": "^10.11.2",
+    "@polkadot/util": "^12.6.2",
+    "@polkadot/util-crypto": "^12.6.2",
+    "@scio-labs/use-inkathon": "^0.6.3",
     "enquirer": "^2.4.1"
   }
 }
